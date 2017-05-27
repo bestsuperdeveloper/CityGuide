@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/layout_color_1"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:paddingBottom="15dp"
+
+    tools:context="krt.com.cityguide.Fragments.EventsSubFragments.ObjectDetailThreeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:text = "@string/user_rate"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_height="wrap_content" />
+
+    <krt.com.cityguide.custom.CustomRatingBar
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/ratingBar1"
+        android:layout_marginLeft="10dp"
+        app:starOn="@drawable/rating_on"
+        app:starOff="@drawable/rating_off"
+        android:layout_marginRight="10dp"
+        android:scaleX="1"
+
+        android:scaleY="1"
+        app:stars="5"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:layout_gravity="center_horizontal" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:text="@string/str_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView25"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+             />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:text="@string/str_high"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView24"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:id = "@+id/rating_layout"
+        android:background="#929292"
+        android:layout_height="0dp"
+        android:padding="4dp"
+        android:layout_marginTop="8dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:text = "@string/user_comment"
+            android:gravity="left|center_vertical"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:inputType="textMultiLine"
+                android:hint="@string/comment"
+                android:gravity="top|left"
+                android:maxLines="10"
+                android:minLines="6"
+                android:lines="8"
+                android:ems="10"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:scrollbars="vertical"
+                android:textColor="@android:color/white"
+                android:id="@+id/editText"
+                 android:layout_height="80dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/highlight_color"
+                    android:text="@string/str_give_rate"
+
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:text="100/100" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

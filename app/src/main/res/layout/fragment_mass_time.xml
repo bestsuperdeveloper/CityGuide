@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="krt.com.cityguide.Fragments.EventsSubFragments.MassTimeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@color/layout_color"
+        android:layout_below="@+id/titleBar"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:orientation="vertical"
+            android:background="@color/layout_color_1"
+
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView20"
+                    android:textSize="@dimen/item_small_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:layout_weight="1">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/spinner"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/search_background" />
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/dropdown_arrow"
+                        android:id="@+id/imageView2"
+                        android:layout_width="30dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:scaleType="centerCrop"
+                        android:padding="5dp" />
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="200dp"
+                    android:text="@string/str_search"
+                    android:background="@drawable/click_searchbutton_layout"
+                    android:textColor="@color/text_color"
+                    android:id="@+id/searchButton"
+                    android:layout_height="40dp"
+
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="1dp">
+
+                <TextView
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="@dimen/item_small_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:text="i"
+                android:background="@drawable/circle_information"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:textSize="20sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:id="@+id/textView21" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="8"
+            android:background="@color/layout_color_1"
+            android:orientation="vertical"
+            android:layout_height="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/layout_color_2"
+                android:layout_height="35dp">
+
+                <TextView
+                    android:text="@string/str_upcoming"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/textView17" />
+            </RelativeLayout>
+
+            <de.halfbit.pinnedsection.PinnedSectionListView
+                android:layout_width="match_parent"
+                android:id = "@+id/churchList"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:elevation="23dp">
+
+
+            </de.halfbit.pinnedsection.PinnedSectionListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id = "@+id/titleBar"
+        android:padding="4dp"
+        android:background="@color/layout_color"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="@string/more_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16sp"
+            android:textSize="18sp"
+
+            android:id="@+id/textView16" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "951658778498",
+    "firebase_url": "https://visitabuga-2f14f.firebaseio.com",
+    "project_id": "visitabuga-2f14f",
+    "storage_bucket": "visitabuga-2f14f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951658778498:android:78113163d3f822e9",
+        "android_client_info": {
+          "package_name": "krt.com.cityguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951658778498-i1geo5ee239csa6hgcrq3soo6v6eh9vt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "krt.com.cityguide",
+            "certificate_hash": "fdf495d774536652e0687479b39c45fe0dc6e5d1"
+          }
+        },
+        {
+          "client_id": "951658778498-7et2efkst2pq3rr0e3ovhmk55al3o9us.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlVLGit1eqTfaXraQB_Wrvs1j1_iVrTFw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951658778498-7et2efkst2pq3rr0e3ovhmk55al3o9us.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

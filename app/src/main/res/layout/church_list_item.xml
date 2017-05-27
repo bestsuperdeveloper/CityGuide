@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="6dp"
+    android:paddingTop="6dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@drawable/click_church_item_layout"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="20dp"
+
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+    <TextView
+        android:text="TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+
+        android:id="@+id/textView9"
+        android:textSize="@dimen/item_medium_text_size"
+        android:textColor="@color/text_color"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1" />
+
+    <TextView
+        android:text="00:00 AM"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/item_medium_text_size"
+        android:layout_gravity="center_vertical"
+        android:layout_width="60dp" />
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+         />
+
+</LinearLayout>

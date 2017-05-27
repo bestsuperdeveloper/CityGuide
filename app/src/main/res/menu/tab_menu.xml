@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_rest"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_restaurant"
+        android:title="@string/tab_rest"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_hotel"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_hotel"
+        android:title="@string/tab_hotel"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_parking"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_car"
+        android:title="@string/tab_parking"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_events"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_eventos"
+        android:title="@string/tab_eventos"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_more"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_mas"
+        android:title="@string/tab_more"
+        app:showAsAction="always" />
+</menu>

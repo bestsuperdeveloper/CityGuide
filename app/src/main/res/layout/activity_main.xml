@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:id="@+id/left_drawer"
+        android:layout_marginTop="20dp"
+        android:layout_width="240dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="60dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/menu_backcolor">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="@dimen/menu_image_size"
+            android:layout_height="@dimen/menu_image_size"
+            android:src="@drawable/example"
+            app:civ_border_color="@color/menu_backcolor"
+            app:civ_border_width="1dp"
+            android:layout_marginLeft="@dimen/menu_left_margin"
+            android:layout_marginTop="@dimen/menu_top_margin"
+            app:civ_shadow="false"
+            app:civ_shadow_radius="10"
+            app:civ_shadow_color="#8BC34A"
+            android:id="@+id/userprofile" />
+
+        <TextView
+            android:text="BRENT RENARD"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/menu_textsize"
+            android:layout_marginLeft="@dimen/menu_left_margin"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_marginTop="@dimen/menu_small_line_space"
+            android:id="@+id/textView2" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/menu_large_line_space"
+            android:background="@color/tab_backcolor"
+            android:layout_marginBottom="@dimen/menu_large_line_space"
+            android:layout_height="1dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:onClick="OnFacebook"
+            android:background="@drawable/click_background_layout"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/menu_item_1"
+                android:layout_marginBottom="@dimen/menu_large_line_space"
+                android:layout_marginTop="@dimen/menu_large_line_space"
+                android:layout_marginLeft="@dimen/menu_left_margin"
+                android:textSize="@dimen/menu_textsize"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_facebook" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:onClick="OnGoogle"
+            android:background="@drawable/click_background_layout"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/menu_item_4"
+                android:layout_marginBottom="@dimen/menu_large_line_space"
+                android:layout_marginTop="@dimen/menu_large_line_space"
+                android:layout_marginLeft="@dimen/menu_left_margin"
+                android:textSize="@dimen/menu_textsize"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_google" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:onClick="OnHelp"
+            android:background="@drawable/click_background_layout"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/menu_item_2"
+                android:layout_marginBottom="@dimen/menu_large_line_space"
+                android:layout_marginTop="@dimen/menu_large_line_space"
+                android:layout_marginLeft="@dimen/menu_left_margin"
+                android:textSize="@dimen/menu_textsize"
+                android:textColor="@color/white"
+
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:onClick="OnSettings"
+            android:background="@drawable/click_background_layout"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/menu_item_3"
+                android:layout_marginBottom="@dimen/menu_large_line_space"
+                android:layout_marginTop="@dimen/menu_large_line_space"
+                android:layout_marginLeft="@dimen/menu_left_margin"
+                android:textSize="@dimen/menu_textsize"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/menu_legal"
+                android:textColor="@color/white"
+                android:clickable="true"
+                android:onClick="OnLegal"
+                android:textSize="@dimen/menu_small_textsize"
+                android:layout_height="wrap_content" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/menu_version"
+                android:textColor="@color/white"
+                android:textSize="@dimen/menu_small_textsize"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

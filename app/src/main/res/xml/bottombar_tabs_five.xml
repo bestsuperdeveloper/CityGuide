@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_rest"
+        icon="@drawable/ic_restaurant"
+        title="@string/tab_rest" />
+    <tab
+        id="@+id/tab_hotel"
+        icon="@drawable/ic_hotel"
+        title="@string/tab_hotel"  />
+    <tab
+        id="@+id/tab_parking"
+        icon="@drawable/ic_car"
+        title="@string/tab_parking"  />
+    <tab
+        id="@+id/tab_events"
+        icon="@drawable/ic_eventos"
+        title="@string/tab_eventos"  />
+    <tab
+        id="@+id/tab_more"
+        icon="@drawable/ic_mas"
+        title="@string/tab_more"  />
+</tabs>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="3dp"
+    android:paddingTop="3dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@color/tab_backcolor"
+    android:layout_height="60dp">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:onClick="OnRest"
+        android:clickable="true"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/ic_restaurant"
+            android:id="@+id/imageView4" />
+
+        <TextView
+            android:text="@string/tab_rest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+
+            android:textSize="10sp"
+            android:id="@+id/textView11" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:onClick="OnHotel"
+        android:clickable="true"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/ic_hotel"
+            android:id="@+id/imageView5" />
+
+        <TextView
+            android:text="@string/tab_hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+
+            android:textSize="10sp"
+            android:id="@+id/textView12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:onClick="OnParking"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/ic_car"
+            android:id="@+id/imageView6" />
+
+        <TextView
+            android:text="@string/tab_parking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+
+            android:textSize="10sp"
+            android:id="@+id/textView13" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:onClick="OnEvents"
+        android:clickable="true"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/ic_eventos"
+            android:id="@+id/imageView7" />
+
+        <TextView
+            android:text="@string/tab_eventos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+
+            android:textSize="10sp"
+            android:id="@+id/textView14" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:onClick="OnMore"
+        android:clickable="true"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/ic_mas"
+            android:id="@+id/imageView8" />
+
+        <TextView
+            android:text="@string/tab_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+
+            android:textSize="10sp"
+            android:id="@+id/textView15" />
+    </LinearLayout>
+
+</LinearLayout>

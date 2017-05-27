@@ -1,0 +1,344 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="krt.com.cityguide.Fragments.MoreFragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/menu_backcolor"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="OnEvents"
+            android:background="@drawable/click_more_layout"
+            android:layout_marginBottom="2dp"
+            android:layout_height="0dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/tab_eventos"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/home_text_size"
+                android:layout_gravity="center_vertical"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:onClick="OnEvents"
+                android:background="@drawable/click_background_layout"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/right_arrow"
+                android:scaleType="fitXY"
+                 android:layout_height="30dp"
+                android:padding="4dp"
+                android:layout_width="22dp" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="OnShopping"
+            android:background="@drawable/click_more_layout"
+            android:layout_marginBottom="2dp"
+            android:layout_height="0dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/more_shopping"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/home_text_size"
+                android:layout_gravity="center_vertical"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="wrap_content" />
+            <ImageButton
+
+                android:background="@drawable/click_background_layout"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/right_arrow"
+                android:scaleType="fitXY"
+                android:layout_height="30dp"
+                android:padding="4dp"
+                android:onClick="OnShopping"
+                android:layout_width="22dp" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="OnAttract"
+            android:background="@drawable/click_more_layout"
+            android:layout_marginBottom="2dp"
+            android:layout_height="0dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/more_arrraction"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/home_text_size"
+                android:layout_gravity="center_vertical"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="wrap_content" />
+            <ImageButton
+
+                android:background="@drawable/click_background_layout"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/right_arrow"
+                android:scaleType="fitXY"
+                android:onClick="OnAttract"
+                android:layout_height="30dp"
+                android:padding="4dp"
+                android:layout_width="22dp" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="OnCoffeeShop"
+            android:background="@drawable/click_more_layout"
+            android:layout_marginBottom="2dp"
+            android:layout_height="0dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/more_coffee_shop"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/home_text_size"
+                android:layout_gravity="center_vertical"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:onClick="OnCoffeeShop"
+                android:background="@drawable/click_background_layout"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/right_arrow"
+                android:scaleType="fitXY"
+                android:layout_height="30dp"
+                android:padding="4dp"
+                android:layout_width="22dp" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="OnArrive"
+            android:background="@drawable/click_more_layout"
+            android:layout_marginBottom="2dp"
+            android:layout_height="0dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/more_arrive"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/home_text_size"
+                android:layout_gravity="center_vertical"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:onClick="OnArrive"
+                android:background="@drawable/click_background_layout"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/right_arrow"
+                android:scaleType="fitXY"
+
+                android:layout_height="30dp"
+                android:padding="4dp"
+                android:layout_width="22dp" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="OnTravelAgency"
+            android:background="@drawable/click_more_layout"
+            android:layout_marginBottom="2dp"
+            android:layout_height="0dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/more_travel"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/home_text_size"
+                android:layout_gravity="center_vertical"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:onClick="OnTravelAgency"
+                android:background="@drawable/click_background_layout"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/right_arrow"
+                android:scaleType="fitXY"
+                android:layout_height="30dp"
+                android:padding="4dp"
+                android:layout_width="22dp" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="OnEmergency"
+            android:background="@drawable/click_more_layout"
+            android:layout_marginBottom="2dp"
+            android:layout_height="0dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="@string/more_emergencies"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/home_text_size"
+                android:layout_gravity="center_vertical"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:onClick="OnEmergency"
+                android:background="@drawable/click_background_layout"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/right_arrow"
+                android:scaleType="fitXY"
+                android:layout_height="30dp"
+                android:padding="4dp"
+                android:layout_width="22dp" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:onClick="OnContact"
+            android:clickable="true"
+            android:background="@drawable/click_more_layout"
+            android:layout_marginBottom="2dp"
+            android:layout_height="0dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/more_contact"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/home_text_size"
+                android:layout_gravity="center_vertical"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:onClick="OnContact"
+                android:background="@drawable/click_background_layout"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/right_arrow"
+                android:scaleType="fitXY"
+                android:layout_height="30dp"
+                android:padding="4dp"
+                android:layout_width="22dp" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
